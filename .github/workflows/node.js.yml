@@ -28,7 +28,7 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          cd /home/apps/sarbon-api/
+          cd /dir/
           git reset --hard
           git pull origin main
           #docker compose exec php bash -c "php yii migrate
