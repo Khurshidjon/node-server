@@ -10,6 +10,9 @@ const options = {
   ca: fs.readFileSync("./certs/cert.pem"), // Sertifikatlar zanjiri (agar mavjud bo'lsa)
 };
 
+
+
+
 // HTTPS serverni yaratish
 const server = https.createServer(options, (req, res) => {
   res.writeHead(200, { "Content-Type": "text/plain" });
